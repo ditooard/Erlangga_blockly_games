@@ -10,13 +10,13 @@
     <div class="container">
       <h1>PILIH PERMAINAN</h1>
       <div class="game-list">
-        <div class="game-card" onclick="expandGame()">
+        <div class="game-card" onclick="expandGameMovie()">
           <img src="assets/images/movie_cover.png" alt="movie" />
           <h2>MOVIE GAMES</h2>
           <p>Buat & gerakan karaktermu dengan blok!</p>
         </div>
 
-        <div class="game-card" onclick="showGameDetail('Meow Maze')">
+        <div class="game-card" onclick="expandGameMusic()">
           <img src="assets/images/music_cover.png" alt="music" />
           <h2>MUSIC GAMES</h2>
           <p>Mainkan alunan nadamu dengan blok!</p>
@@ -24,10 +24,17 @@
       </div>
     </div>
 
-    <div class="modal" id="modal">
+    <div class="modal" id="modal-movie">
       <div class="modal-content-full">
         <span class="close" onclick="closeModal()">&times;</span>
         <iframe src="movie.html" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-music">
+      <div class="modal-content-full">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe src="music.html" frameborder="0"></iframe>
       </div>
     </div>
 

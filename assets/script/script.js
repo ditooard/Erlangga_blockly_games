@@ -1,5 +1,10 @@
-function expandGame() {
-  document.getElementById("modal").style.display = "block";
+function expandGameMovie() {
+  document.getElementById("modal-movie").style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+function expandGameMusic() {
+  document.getElementById("modal-music").style.display = "block";
   document.body.style.overflow = "hidden";
 }
 
@@ -10,7 +15,8 @@ function expandGame() {
   });
 
 function closeModal() {
-  document.getElementById("modal").style.display = "none";
+  document.getElementById("modal-movie").style.display = "none";
+    document.getElementById("modal-music").style.display = "none";
   document.body.style.overflow = "auto";
 }
 
