@@ -92,3 +92,27 @@ h1 {
   cursor: pointer;
   z-index: 10000;
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Tambahkan class animasi ke kartu */
+.floating-card {
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+/* Hover: pause animasi & tambah scale */
+.floating-card:hover {
+  animation-play-state: paused;
+  transform: scale(1.05);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
