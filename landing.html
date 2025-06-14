@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Game Edukasi</title>
+  <link rel="stylesheet" href="assets/css/landing.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PILIH PERMAINAN</h1>
+    <div class="game-list">
+      <div class="game-card" onclick="expandGame()">
+        <img src="assets/images/movie_cover.png" alt="movie">
+        <h2>MOVIE GAMES</h2>
+        <p>Buat & gerakan karaktermu dengan blok!</p>
+      </div>
+
+      <div class="game-card" onclick="showGameDetail('Meow Maze')">
+        <img src="assets/images/music_cover.png" alt="music">
+        <h2>MUSIC GAMES</h2>
+        <p>Mainkan alunan nadamu dengan blok!</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="modal" id="modal">
+    <div class="modal-content-full">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <iframe src="movie.html" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <script src="assets/script/script.js"></script>
+</body>
+</html>

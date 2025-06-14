@@ -1,0 +1,183 @@
+body {
+  background-color: #f8fbff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 20px;
+  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.6em;
+  margin: 1em 0;
+  color: #003366;
+}
+
+h1 a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0066cc;
+}
+
+.farSide {
+  text-align: right;
+}
+html[dir="RTL"] .farSide {
+  text-align: left;
+}
+
+.level_number {
+  border: 1px solid #bcdffb;
+  border-radius: 9999px;
+  padding: 6px 16px;
+  color: #0066cc;
+  background-color: #e6f2ff;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.level_dot {
+  border: 1px solid #bcdffb;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: #e6f2ff;
+  transition: background-color 0.3s ease;
+}
+
+.level_done, .level_dot:hover, .level_number:hover {
+  background-color: #b3dcff;
+  color: #003366;
+}
+
+#containerCode {
+  direction: ltr;
+  background-color: #eef6ff;
+  padding: 12px;
+  margin: 0 3ex;
+  font-size: 1.1em;
+  overflow: auto;
+  max-height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Buttons */
+button {
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.25);
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.98);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+button.primary {
+  background: #0056b3;
+  color: #fff;
+}
+
+button.secondary {
+  background: #007bff;
+  color: #fff;
+}
+
+button>img {
+  opacity: 0.8;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Dialogs */
+#dialog, #dialogBorder {
+  visibility: hidden;
+  position: absolute;
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #cce0ff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+#dialogShadow {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.25;
+}
+
+.dialogAnimate {
+  transition: all 0.3s ease-in-out;
+}
+.dialogHiddenContent {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#dialogHeader {
+  height: 30px;
+  margin: -16px -16px 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #d9ebff;
+  cursor: move;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  color: #003366;
+}
+
+#dialog button {
+  min-width: 5em;
+}
+
+.readonly .blocklyMainBackground {
+  stroke: none;
+  fill: #f0f0f0;
+}
+
+#galleryForm > header {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+#galleryForm > footer {
+  font-size: 0.85em;
+  color: #555;
+}
+
+#galleryForm > * {
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
