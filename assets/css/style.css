@@ -12,7 +12,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #FEEDBD;
+  background: #feedbd;
   overflow-x: hidden;
 }
 
@@ -34,10 +34,9 @@ body {
 .child img {
   height: 650px;
   width: auto;
-
 }
 
-.plant{
+.plant {
   position: absolute;
   top: 470px;
   right: -10px;
@@ -47,10 +46,9 @@ body {
 .plant img {
   height: 500px;
   width: auto;
-
 }
 
-.bubble{
+.bubble {
   position: absolute;
   top: 140px;
   left: 60px;
@@ -60,7 +58,6 @@ body {
 .bubble img {
   height: 300px;
   width: auto;
-
 }
 
 .bubble-text {
@@ -72,7 +69,7 @@ body {
   background: white;
   border-radius: 20px;
   padding: 12px 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   font-size: 14px;
   text-align: center;
   line-height: 1.4;
@@ -99,9 +96,9 @@ body {
   border-radius: 20px;
   background: #f1f1f1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    height: max-content;
-    width: 1100px;
+  transition: transform 0.3s ease;
+  height: max-content;
+  width: 1100px;
 }
 
 .game-wrapper {
@@ -143,7 +140,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden;
 }
 
@@ -174,13 +171,23 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .floor {
@@ -189,8 +196,6 @@ body {
   left: 0;
   width: 100%;
   height: 30%;
-  background-color: #E3B852; /* warna lantai dari gambar */
+  background-color: #e3b852; /* warna lantai dari gambar */
   z-index: -1;
 }
-
-

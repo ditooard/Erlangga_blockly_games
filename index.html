@@ -1,52 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Explore - Blocky Games</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-  <div class="header">
-    <img src="assets/images/logo.png" alt="">
-
-  </div>
-
-  <div class="scene">
-    <div class="child">
-      <img id="anak-img" src="assets/images/dontol.png" alt="Anak kecil">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Explore - Blocky Games</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="assets/images/logo.png" alt="" />
     </div>
 
-    <div class="bubble">
-      <img id="bubble-img" src="assets/images/bubble.png" alt="bubble">
-     
-    </div>
-    
-    
-     <div class="plant">
-      <img src="assets/images/plant.png" alt="plant">
-    </div>
+    <div class="scene">
+      <div class="child">
+        <img id="anak-img" src="assets/images/dontol.png" alt="Anak kecil" />
+      </div>
 
-    <div class="computer">
-      <div class="game-wrapper">
-        <iframe src="landing.html" frameborder="0" id="gameFrame"></iframe>
+      <div class="bubble">
+        <img id="bubble-img" src="assets/images/bubble.png" alt="bubble" />
+      </div>
+
+      <div class="plant">
+        <img src="assets/images/plant.png" alt="plant" />
+      </div>
+
+      <div class="computer">
+        <div class="game-wrapper">
+          <iframe src="landing.html" frameborder="0" id="gameFrame"></iframe>
+        </div>
       </div>
     </div>
 
-   
-  </div>
-  
-
-  <!-- Modal full-screen -->
-  <div class="modal" id="modal">
-    <div class="modal-content-full">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <iframe src="movie.html" frameborder="0"></iframe>
+    <!-- Modal full-screen -->
+    <div class="modal" id="modal">
+      <div class="modal-content-full">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe src="movie.html" frameborder="0"></iframe>
+      </div>
     </div>
-  </div>
 
-  <div class="floor"></div>
+    <div class="floor"></div>
 
-  <script src="assets/script/script.js"></script>
-</body>
+    <script src="assets/script/script.js"></script>
+  </body>
 </html>
